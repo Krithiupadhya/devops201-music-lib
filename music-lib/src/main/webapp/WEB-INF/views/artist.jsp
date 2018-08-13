@@ -22,20 +22,43 @@
 		<div class="page-header">
 			<h1>Artist</h1>
 		</div>
-			  <form:form class="form-horizontal" method="POST" action="/music-lib/artist"  modelAttribute="artist">
-			  	  <form:input path="artistId" type="hidden" class="form-control"/>
+			  <form:form class="form-inline" method="POST" action="/music-lib/artist"  modelAttribute="artist">
+			  	  
 				  <div class="form-group">
 					<label class="control-label col-sm-2" for="email">Name:</label>
 					<div class="col-sm-8">
 					  <form:input path="artistName" type="text" class="form-control" placeholder="Enter Name" required="true"/>
 					</div>
 				  </div>
-				  <div class="form-group"> 
-					<div class="col-sm-offset-2 col-sm-10">
 					  <button type="submit" id="submit" name="submit" class="btn ">Add</button>
-					</div>
-				  </div>
+					  <c:if test="${successMsg!=null}">
+					  <br/>
+						<div class="alert alert-success  ">
+		  					<strong>${successMsg } </strong>
+						</div>
+					</c:if>
+					<c:if test="${successMsg==null}">
+					  <br/><br/>
+					</c:if>
 				</form:form>
+				
+				
+				<table class="table table-striped table-fixed">
+					<thead>
+						<tr>
+							<td><strong>Artist Id</strong></td>
+							<td><strong>Artist Name</strong></td>
+						</tr>
+					</thead>
+					<tbody>
+					<c:forEach items="${artists}" var="art">
+						<tr>
+							<td>${art.artistId }</td>
+							<td>${art.artistName}</td>
+						</tr>
+					</c:forEach>
+					</tbody>
+				</table>
 		</div>
 </body>
 </html>

@@ -9,6 +9,11 @@ $(document).ready(  $(function()
 					newEntry = $(currentEntry.clone()).appendTo(controlForm);
 
 				newEntry.find('input').val('');
+					
+				newEntry.find('.selectpicker').data('selectpicker', null)
+				newEntry.find('.bootstrap-select').replaceWith(function() { return $('select', this); });;
+				newEntry.find('.selectpicker').selectpicker('deselectAll');
+				newEntry.find('.selectpicker').selectpicker();
 				controlForm.find('.entry:not(:first) .btn-add')
 					.removeClass('btn-add').addClass('btn-remove')
 					.removeClass('btn-success').addClass('btn-danger')
@@ -21,8 +26,6 @@ $(document).ready(  $(function()
 				return false;
 			}).on('click','#submit', function(e)
             {
-	            alert(123);
-	
 	            $(".trackId").each(function(i) {
                     $(this).attr('name', "musicTracks["+i+"].trackId");
             	});
@@ -37,12 +40,6 @@ $(document).ready(  $(function()
 	        	});
 	            $("select.artists-select").each(function(i){
 	            			var slecteditem= $(this).val();  
-	            			alert(slecteditem);
-	            			//var slecteditemtext= $(this).find("option:selected").text();  
-	            			/* if(slecteditem.length>0){
-	            				$(this).attr('name',"musicTracks["+i+"].artists[0].artistId");
-	            				$(this).value=slecteditem[0];
-	            			} */
 	            			artGroup = $('.artists-group')
 	            			for(var j=0;j<slecteditem.length;j++){
 	            				var input = $("<input/>", {
@@ -54,14 +51,8 @@ $(document).ready(  $(function()
 	            				
 	            				var newEnt= (input).appendTo(artGroup);
 	            			 
-	            				//newEnt.attr('name',"musicTracks["+i+"].artists["+j+"].artistId");
-	            				//newEnt.value=slecteditem[j];
 	            			}
 	            			}
 	            			);
-
             })
-
-            	//$('.selectpicker').selectpicker('val', [1 , 2]);	
-            	
 		}));

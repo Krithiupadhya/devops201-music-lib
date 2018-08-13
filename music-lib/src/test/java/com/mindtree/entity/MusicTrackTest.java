@@ -55,7 +55,7 @@ public class MusicTrackTest {
 		String title = "";
 		String author = "";
 		Long playingSec = new Long(1L);
-		List<Artist> artists = new LinkedList();
+		List<Artist> artists = new LinkedList<>();
 
 		MusicTrack result = new MusicTrack(trackId, title, author, playingSec, artists);
 
@@ -78,8 +78,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -97,7 +97,7 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_2()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 		Object obj = null;
 
 		boolean result = fixture.equals(obj);
@@ -116,7 +116,7 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_3()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 		Object obj = new Object();
 
 		boolean result = fixture.equals(obj);
@@ -135,8 +135,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_4()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -154,8 +154,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_5()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -173,8 +173,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_6()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -192,8 +192,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_7()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -211,8 +211,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_8()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -230,8 +230,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_9()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -249,8 +249,8 @@ public class MusicTrackTest {
 	@Test
 	public void testEquals_10()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack((Long) null, "", "", new Long(1L), new LinkedList());
-		Object obj = new MusicTrack((Long) null, "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack((Long) null, "", "", new Long(1L), new LinkedList<>());
+		Object obj = new MusicTrack((Long) null, "", "", new Long(1L), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -268,7 +268,7 @@ public class MusicTrackTest {
 	@Test
 	public void testGetArtists_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		List<Artist> result = fixture.getArtists();
 
@@ -287,7 +287,7 @@ public class MusicTrackTest {
 	@Test
 	public void testGetAuthor_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		String result = fixture.getAuthor();
 
@@ -305,7 +305,7 @@ public class MusicTrackTest {
 	@Test
 	public void testGetPlayingSec_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		Long result = fixture.getPlayingSec();
 
@@ -330,7 +330,7 @@ public class MusicTrackTest {
 	@Test
 	public void testGetTitle_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		String result = fixture.getTitle();
 
@@ -348,7 +348,7 @@ public class MusicTrackTest {
 	@Test
 	public void testGetTrackId_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		Long result = fixture.getTrackId();
 
@@ -391,7 +391,7 @@ public class MusicTrackTest {
 	@Test
 	public void testHashCode_2()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack((Long) null, (String) null, "", (Long) null, new LinkedList());
+		MusicTrack fixture = new MusicTrack((Long) null, (String) null, "", (Long) null, new LinkedList<>());
 
 		int result = fixture.hashCode();
 
@@ -409,8 +409,8 @@ public class MusicTrackTest {
 	@Test
 	public void testSetArtists_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
-		List<Artist> artists = new LinkedList();
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
+		List<Artist> artists = new LinkedList<>();
 
 		fixture.setArtists(artists);
 
@@ -427,7 +427,7 @@ public class MusicTrackTest {
 	@Test
 	public void testSetAuthor_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 		String author = "";
 
 		fixture.setAuthor(author);
@@ -445,7 +445,7 @@ public class MusicTrackTest {
 	@Test
 	public void testSetPlayingSec_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 		Long playingSec = new Long(1L);
 
 		fixture.setPlayingSec(playingSec);
@@ -463,7 +463,7 @@ public class MusicTrackTest {
 	@Test
 	public void testSetTitle_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 		String title = "";
 
 		fixture.setTitle(title);
@@ -481,7 +481,7 @@ public class MusicTrackTest {
 	@Test
 	public void testSetTrackId_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 		Long trackId = new Long(1L);
 
 		fixture.setTrackId(trackId);
@@ -499,7 +499,7 @@ public class MusicTrackTest {
 	@Test
 	public void testToString_1()
 		throws Exception {
-		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList());
+		MusicTrack fixture = new MusicTrack(new Long(1L), "", "", new Long(1L), new LinkedList<>());
 
 		String result = fixture.toString();
 

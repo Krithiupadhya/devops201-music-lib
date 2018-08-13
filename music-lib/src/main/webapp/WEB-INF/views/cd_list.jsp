@@ -36,7 +36,7 @@
 	      	 </c:forEach>
 	      </p>
 	      <p>Number Of Tracks: ${cd.noOfTracks}</p>
-		  <p>Playing time: ${cd.toPlayingTimeInsec}</p>
+		  <p>Playing time: ${cd.playingTimeStr}</p>
 		  </div>
 		  
 	    </div>

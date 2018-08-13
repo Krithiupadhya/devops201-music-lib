@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	 <artists artist_id="1" artist_name="Art1"/>
+    <artists artist_id="2" artist_name="Art2"/>
+    <artists artist_id="3" artist_name="Art3"/>
+    <artists artist_id="4" artist_name="Art4"/>
+    
+    <MUSIC_CDS CD_ID="1" TITLE="CD Id 1" YEAR_OF_RELEASE="2001"/>
+    <MUSIC_CDS CD_ID="2" TITLE="Cd Id 2" YEAR_OF_RELEASE="2010"/>
+    
+    <music_tracks track_id="1" title="Sonu Nigam" author="AUth1" playing_sec="1" cd_id="1"/>
+    <music_tracks track_id="2" title="Asha Bhosle" author="AUth2" playing_sec="2" cd_id="1"/>
+    <music_tracks track_id="3" title="Shaan" author="AUth3" playing_sec="3" cd_id="1"/>
+    <music_tracks track_id="4" title="Vijay Prakash" author="AUth4" playing_sec="4" cd_id="2"/>
+    
+    <MUSIC_TRACK_ARTISTS TRACK_ID="1" ARTIST_ID="1"/>
+    <MUSIC_TRACK_ARTISTS TRACK_ID="1" ARTIST_ID="3"/>
+    <MUSIC_TRACK_ARTISTS TRACK_ID="2" ARTIST_ID="4"/>
+    <MUSIC_TRACK_ARTISTS TRACK_ID="3" ARTIST_ID="2"/>
+</dataset>

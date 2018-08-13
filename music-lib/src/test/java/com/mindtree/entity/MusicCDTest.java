@@ -53,7 +53,7 @@ public class MusicCDTest {
 		Long cdId = new Long(1L);
 		String title = "";
 		Integer yearOfRelease = new Integer(1);
-		List<MusicTrack> musicTracks = new LinkedList();
+		List<MusicTrack> musicTracks = new LinkedList<>();
 
 		MusicCD result = new MusicCD(cdId, title, yearOfRelease, musicTracks);
 
@@ -75,8 +75,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -94,7 +94,7 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_2()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 		Object obj = null;
 
 		boolean result = fixture.equals(obj);
@@ -113,7 +113,7 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_3()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 		Object obj = new Object();
 
 		boolean result = fixture.equals(obj);
@@ -132,8 +132,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_4()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -151,8 +151,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_5()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -170,8 +170,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_6()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -189,8 +189,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_7()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -208,8 +208,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_8()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -227,8 +227,8 @@ public class MusicCDTest {
 	@Test
 	public void testEquals_9()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", (Integer) null, new LinkedList());
-		Object obj = new MusicCD(new Long(1L), "", (Integer) null, new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", (Integer) null, new LinkedList<>());
+		Object obj = new MusicCD(new Long(1L), "", (Integer) null, new LinkedList<>());
 
 		boolean result = fixture.equals(obj);
 
@@ -246,7 +246,7 @@ public class MusicCDTest {
 	@Test
 	public void testGetCdId_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		Long result = fixture.getCdId();
 
@@ -271,7 +271,7 @@ public class MusicCDTest {
 	@Test
 	public void testGetMusicTracks_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		List<MusicTrack> result = fixture.getMusicTracks();
 
@@ -290,7 +290,7 @@ public class MusicCDTest {
 	@Test
 	public void testGetTitle_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		String result = fixture.getTitle();
 
@@ -308,7 +308,7 @@ public class MusicCDTest {
 	@Test
 	public void testGetYearOfRelease_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		Integer result = fixture.getYearOfRelease();
 
@@ -351,7 +351,7 @@ public class MusicCDTest {
 	@Test
 	public void testHashCode_2()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), (String) null, (Integer) null, new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), (String) null, (Integer) null, new LinkedList<>());
 
 		int result = fixture.hashCode();
 
@@ -369,7 +369,7 @@ public class MusicCDTest {
 	@Test
 	public void testSetCdId_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 		Long cdId = new Long(1L);
 
 		fixture.setCdId(cdId);
@@ -387,8 +387,8 @@ public class MusicCDTest {
 	@Test
 	public void testSetMusicTracks_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
-		List<MusicTrack> musicTracks = new LinkedList();
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
+		List<MusicTrack> musicTracks = new LinkedList<>();
 
 		fixture.setMusicTracks(musicTracks);
 
@@ -405,7 +405,7 @@ public class MusicCDTest {
 	@Test
 	public void testSetTitle_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 		String title = "";
 
 		fixture.setTitle(title);
@@ -423,7 +423,7 @@ public class MusicCDTest {
 	@Test
 	public void testSetYearOfRelease_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 		Integer yearOfRelease = new Integer(1);
 
 		fixture.setYearOfRelease(yearOfRelease);
@@ -441,7 +441,7 @@ public class MusicCDTest {
 	@Test
 	public void testToString_1()
 		throws Exception {
-		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList());
+		MusicCD fixture = new MusicCD(new Long(1L), "", new Integer(1), new LinkedList<>());
 
 		String result = fixture.toString();
 

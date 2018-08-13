@@ -21,6 +21,7 @@ public class Artist {
 	@Column(name="ARTIST_ID")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long artistId;
+	@Column(name="ARTIST_NAME")
 	private String artistName;
 	/**
 	 * @param artistId

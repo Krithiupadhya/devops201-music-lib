@@ -3,21 +3,16 @@
  */
 package com.mindtree.entity;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -32,8 +27,11 @@ public class MusicTrack {
 	@Column(name="TRACK_ID")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long trackId;
+	@Column(name="TITLE")
 	private String title;
+	@Column(name="AUTHOR")
 	private String author;
+	@Column(name="PLAYING_SEC")
 	private Long playingSec;
 	@ManyToMany
 	@JoinTable(name = "MUSIC_TRACK_ARTISTS", joinColumns = { @JoinColumn(name = "TRACK_ID") }, inverseJoinColumns = { @JoinColumn(name = "ARTIST_ID") })

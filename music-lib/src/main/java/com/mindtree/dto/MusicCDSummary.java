@@ -18,7 +18,7 @@ public class MusicCDSummary {
 	private Set<Artist> artists;
 	private Integer yearOfRelease;
 	private Integer noOfTracks;
-	private Integer toPlayingTimeInsec;
+	private Long toPlayingTimeInsec;
 	
 	public MusicCDSummary() {
 	}
@@ -33,7 +33,7 @@ public class MusicCDSummary {
 	 * @param toPlayingTimeInsec
 	 */
 	public MusicCDSummary(Long cd_id, String title, Set<Artist> artists, Integer yearOfRelease, Integer noOfTracks,
-			Integer toPlayingTimeInsec) {
+			Long toPlayingTimeInsec) {
 		super();
 		this.cd_id = cd_id;
 		this.title = title;
@@ -127,7 +127,7 @@ public class MusicCDSummary {
 	/**
 	 * @return the toPlayingTimeInsec
 	 */
-	public Integer getToPlayingTimeInsec() {
+	public Long getToPlayingTimeInsec() {
 		return toPlayingTimeInsec;
 	}
 
@@ -135,10 +135,13 @@ public class MusicCDSummary {
 	/**
 	 * @param toPlayingTimeInsec the toPlayingTimeInsec to set
 	 */
-	public void setToPlayingTimeInsec(Integer toPlayingTimeInsec) {
+	public void setToPlayingTimeInsec(Long toPlayingTimeInsec) {
 		this.toPlayingTimeInsec = toPlayingTimeInsec;
 	}
 
+	public String getPlayingTimeStr() {
+		return toPlayingTimeInsec/60+" min(s) "+toPlayingTimeInsec%60 +"sec(s)";
+	}
 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()

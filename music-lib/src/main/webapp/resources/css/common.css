@@ -2,3 +2,32 @@
 #home .home, #cdDetails .cdDetails, #artist .artist{
 	  background-color: #e7e7e7;
 }
+.no-border {
+	outline: 0;
+    border: none;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.table-fixed{
+  width: 100%;
+  tbody{
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+    }
+  thead,tbody,tr,td,th{
+    display:block;
+  }
+  tbody{
+    td{
+      float:left;
+    }
+  }
+  thead {
+    tr{
+      th{
+        float:left;
+      }
+    }
+  }
+}
