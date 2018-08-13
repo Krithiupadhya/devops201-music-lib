@@ -16,7 +16,7 @@
 </head>
 <body id="home">
 	<div class="jumbotron text-center mybackground" >
-	  <h1>Music Library</h1>  
+	  <h1>Music-Library</h1>  
 	</div>
 	<div id="nav-placeholder">
 	</div>
